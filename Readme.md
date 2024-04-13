@@ -1,5 +1,11 @@
 ## commands
 
+### Build the docker image
+`docker image build . -t amithbrs/my_node_app:v2.0.0`
+
+### Push the docker image which was build
+`docker push amithbrs/my_node_app:v2.0.0`
+
 ### Create a k8s deployment with a name
 `kubectl create deployment expressapp --image=amithbrs/my_node_app:v2.0.0 --replicas=3`
 
