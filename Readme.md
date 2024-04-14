@@ -12,8 +12,8 @@
 ### Expose the deployment as type Loadbalancer
 `kubectl expose deployment expressapp --port='3000' --target-port='3000' --type=LoadBalancer`
 
---port - Host port on which the service is exposed<br/>
---target-port - Port through which the services are listening internally
+`--port` - Host port on which the service is exposed<br/>
+`--target-port` - Port through which the services are listening internally
 
 other types
 - `--type=ClusterIP`
