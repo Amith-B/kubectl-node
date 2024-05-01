@@ -33,6 +33,12 @@ other types
 
 `kubectl get replicaset`
 
+### Update the image in deployment
+
+`kubectl set image deployment expressapp expressapp=amithbrs/my_node_app:v2.0.0`
+
+This will try to download the new image and start the replicaset with previously given amount of replicaset, if it is succedded then it will terminate the old pods which are running in old replicaset
+
 ### Get all the available k8s services
 
 `kubectl get svc`
