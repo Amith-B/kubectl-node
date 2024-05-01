@@ -29,6 +29,10 @@ other types
 
 `kubectl scale deployment expressapp --replicas=5`
 
+### Get all the available k8s replicaset
+
+`kubectl get replicaset`
+
 ### Get all the available k8s services
 
 `kubectl get svc`
