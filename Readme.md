@@ -52,3 +52,7 @@ This will try to download the new image and start the replicaset with previously
 ### If running the k8s on single node minikube, you can expose the service by tunneling with below command
 
 `minikube service expressapp`
+
+### Get sorted events
+
+`kubectl get events --sort-by='.lastTimestamp'`
