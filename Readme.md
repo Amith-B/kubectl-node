@@ -35,7 +35,13 @@ other types
 
 ### Update the image in deployment
 
-`kubectl set image deployment expressapp expressapp=amithbrs/my_node_app:v2.0.0`
+`kubectl set image deployment expressapp my-node-app-dd8zp=amithbrs/my_node_app:v2.0.0`
+
+The container name(ex: `my-node-app-dd8zp`) should match the running container
+
+#### To get the container name for a given pod run below command
+
+`kubectl get pods expressapp-cf9b7d576-chqxs -o=jsonpath='{.spec.containers[*].name}'`
 
 This will try to download the new image and start the replicaset with previously given amount of replicaset, if it is succedded then it will terminate the old pods which are running in old replicaset
 
