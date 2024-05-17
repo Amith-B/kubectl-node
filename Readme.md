@@ -60,3 +60,7 @@ This will try to download the new image and start the replicaset with previously
 ### To delete all the instance of deployment, service and pods at one go that relate to same label
 
 `kubectl delete all -l app=expressapp`
+
+### Create a deployment or service with yml file
+
+`kubectl apply -f deployment.yml`
