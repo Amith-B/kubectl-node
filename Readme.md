@@ -57,6 +57,6 @@ This will try to download the new image and start the replicaset with previously
 
 `kubectl get events --sort-by='.lastTimestamp'`
 
-### To delete all the instance of deployment, service and pods at one go
+### To delete all the instance of deployment, service and pods at one go that relate to same label
 
 `kubectl delete all -l app=expressapp`
