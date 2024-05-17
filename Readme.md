@@ -64,3 +64,8 @@ This will try to download the new image and start the replicaset with previously
 ### Create a deployment or service with yml file
 
 `kubectl apply -f deployment.yml`
+
+### Service discovery between 2 microservices
+
+Consider there are 2 deployments and the names/label are deployment-1 and deployment-2
+If deployment-1 is connecting to deployment-2 then the easy way to configure that is by adding a environment variable in deployment-1 yml file which contains the URL like this http://deployment-2, the k8s will automatically discover this link is related to deployment-2
