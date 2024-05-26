@@ -11,7 +11,7 @@ const randomStr = random(10);
 app.get("/", (req, res) => {
   console.log("get request");
   res.json({
-    v: 2,
+    v: 3,
     message: `Message from node app from host: ${os.hostname()}, unique app code: ${randomStr}`,
   });
 });
